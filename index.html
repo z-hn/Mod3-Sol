@@ -1,32 +1,80 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-<meta charset="utf-8">
-<meta name= "viewport" content= "width=device-width, initial-scale-1">
-<title>Module-2 Solution</title>
-<link rel="stylesheet" href="style.css">
-
-</head>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOOD, LLC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
 <body>
-<h1>Module-2 Solution - Our Menu</h1>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <div class="navbar-brand">
+            <a href="index.html"><h1>FOOD, LLC</h1></a>
+          </div>
 
-<div id="box1">
-<p id="p1">Chicken</p>
-Chicken is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way
-</div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
-<div id="box2">
-<p id="p2">Beef</p>
-Beef is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way
-</div>
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="menu-categories.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Chicken</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Beef</a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Sushe</a>
+            </li>
+           
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
 
-<div id="box3">
-<p id="p3">Sushe</p>
-Sushe is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way
-</div>
+  <div> <h1> Our Menu </h1></div>
 
+  
+
+  <div id="main-content" class="container">
+    
+
+    <div id="home-tiles" class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="menu-categories.html"><div id="menu-tile"><span>Chicken <p id="p1">For the broader species of which chickens form a subspecies, see Red junglefowl. For other uses, see Chicken (disambiguation), Chooks (disambiguation), or Red junglefowl.</p></span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-category.html"><div id="specials-tile"><span>Beef <p id="p2">Beef is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way. Beef is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way.</p></span></div></a>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+      <a href="map-category.html"><div id="map-tile"><span>Sushe<p id="p3">Sushe is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way. Sushe is one of very nice dishes in our restaurant. you can enjoy it with rice, bread or salad. it is a very nice recipe any way</p></span></div></a>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
